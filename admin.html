@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Grievance Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Admin Grievance Management System</h1>
+    <p class="subtitle">View and manage all citizen complaints</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="card-header-inline">
+        <h2>All Complaints</h2>
+        <button id="refreshAdminList" class="btn small">Refresh</button>
+      </div>
+      <div id="adminComplaintsContainer" class="table-wrapper">
+        <!-- Admin complaints table will be injected here -->
+      </div>
+    </section>
+
+    <section class="layout-two">
+      <section class="card">
+        <h2>Search Complaint</h2>
+        <div class="form-row inline">
+          <input type="text" id="adminSearchId" placeholder="Enter Complaint ID" />
+          <button id="adminSearchBtn" class="btn secondary">Search</button>
+        </div>
+        <div id="adminSearchResult" class="search-result">
+          <!-- Search result will appear here -->
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Update Complaint Status</h2>
+        <div class="form-row">
+          <label for="adminUpdateId">Complaint ID</label>
+          <input type="text" id="adminUpdateId" placeholder="Enter Complaint ID" />
+        </div>
+        <div class="form-row">
+          <label for="adminNewStatus">New Status</label>
+          <select id="adminNewStatus">
+            <option value="Open">Open</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Closed">Closed</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+        <button id="adminUpdateStatusBtn" class="btn primary">Update Status</button>
+        <p id="adminUpdateMessage" class="message"></p>
+
+        <hr />
+
+        <h3>Status Summary</h3>
+        <ul id="adminStatusSummary" class="status-summary">
+          <!-- Summary will be injected here -->
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; Admin Grievance Management System - Static Web Demo</small>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>
+

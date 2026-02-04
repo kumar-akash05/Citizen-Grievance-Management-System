@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Citizen Grievance Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Citizen Grievance Management System</h1>
+    <p class="subtitle">Secure and transparent platform for registering and tracking public complaints</p>
+  </header>
+
+  <main>
+    <section class="hero-banner reveal reveal-up">
+      <div class="hero-text">
+        <h1>Empowering Citizens with a Voice</h1>
+        <p>Submit grievances, track their status, and help improve public services with a streamlined and accountable system.</p>
+        <a href="register.html" target="_blank" class="btn primary hero-cta">Register Complaint</a>
+      </div>
+      <div class="hero-image-wrapper">
+        <img
+          src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800"
+          alt="Citizens discussing issues with government officials"
+          class="hero-image"
+        />
+      </div>
+    </section>
+
+    <section class="layout-two">
+      <section class="card reveal reveal-right">
+        <h2>Search Complaint</h2>
+        <div class="form-row inline">
+          <input type="text" id="searchId" placeholder="Enter Complaint ID" />
+          <button id="searchBtn" class="btn secondary">Search</button>
+        </div>
+        <div id="searchResult" class="search-result">
+          <!-- Search result will appear here -->
+        </div>
+
+        <hr />
+
+        <h3>Your Complaint Status</h3>
+        <ul id="statusSummary" class="status-summary">
+          <!-- Summary will be injected here -->
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <small>
+      &copy; 2026 Akash Kumar |
+      <a href="https://www.linkedin.com/in/akash-kumar-7588762aa/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://github.com/kumar-akash05" target="_blank" rel="noopener noreferrer">GitHub</a> |
+      
+    </small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

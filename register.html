@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register Complaint - Citizen Grievance Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Register Your Complaint</h1>
+    <p class="subtitle">Fill in the details below to submit your grievance</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Add New Complaint</h2>
+      <form id="complaint-form">
+        <div class="form-row">
+          <label for="complaintId">Complaint ID</label>
+          <input type="text" id="complaintId" required />
+        </div>
+        <div class="form-row">
+          <label for="citizenName">Citizen Name</label>
+          <input type="text" id="citizenName" required />
+        </div>
+        <div class="form-row">
+          <label for="mobileNumber">Mobile Number (10 digits)</label>
+          <input type="tel" id="mobileNumber" maxlength="10" required />
+        </div>
+        <div class="form-row">
+          <label for="complaintType">Complaint Type</label>
+          <select id="complaintType">
+            <option value="" disabled selected>Select your complaint</option>
+            <option value="Water">Water</option>
+            <option value="Electricity">Electricity</option>
+            <option value="Road">Road</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+        <div class="form-row" id="otherComplaintRow" style="display: none;">
+          <label for="otherComplaint">Describe your complaint</label>
+          <textarea id="otherComplaint" rows="3" placeholder="Write your complaint details here"></textarea>
+        </div>
+        <button type="submit" class="btn primary">Submit Complaint</button>
+        <p id="formMessage" class="message"></p>
+      </form>
+      <p style="margin-top: 0.75rem; font-size: 0.85rem; color: #4b5563;">
+        After submission, you can return to the main portal and use your Complaint ID to track the status.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <small>
+      &copy; 2026 Akash Kumar |
+      <a href="https://www.linkedin.com/in/akash-kumar-7588762aa/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+      <a href="https://github.com/kumar-akash05" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </small>
+  </footer>
+
+  <script src="register.js"></script>
+</body>
+</html>
+
